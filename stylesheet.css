@@ -1,0 +1,92 @@
+/*Font Sizes*/
+@font-face{
+    font-family: PoppinsH;
+    src: url(/Poppins/Poppins-Medium.ttf);
+}
+@font-face{
+    font-family: PoppinsM;
+    src: url(/Poppins/Poppins-Medium.ttf);
+}
+@font-face{
+    font-family: Poppinsb;
+    src: url(/Poppins/Poppins-Regular.ttf);
+}
+
+html, body{
+    font-size: 16px;
+}
+
+h1, h2{
+    font-family: PoppinsH, "Helvetica Neue b", sans-serif;
+    margin: 1.5rem 0 0 0;
+    color: #2859CA;
+}
+h3{
+    font-family: PoppinsM, "Helvetica Neue b", sans-serif;
+}
+
+h1{
+    font-size: 2.6rem;
+}
+h2{
+    font-size: 1.8rem;
+}
+h3, p, ul{
+    font-size: 1rem;
+    margin: 0;
+}
+
+/*Design*/
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: Poppinsb, "Helvetica", sans-serif;
+
+    max-width: 1000px;
+    padding: 0 50px 50px 50px;
+    margin: 0 auto;
+    border-top: 10px solid #2859CA;
+    border-bottom: 10px solid #2859CA;
+}
+
+.container{
+
+    h1 span{
+        color: black;
+    }
+    nav{
+        padding-left: 2.5rem;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    div span:last-of-type:after {
+        content: ' ';
+    }
+    div span:after{
+        content:" •";
+    }
+}
+
+.components{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    aside{
+        display: flex;
+        justify-content: space-between;
+    }
+    li span{
+        font-family: PoppinsM, "Helvetica Neue b", sans-serif;
+        color: #2859CA;
+    }
+}
+
+.cols{
+    aside {
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+}
